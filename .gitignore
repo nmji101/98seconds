@@ -5,7 +5,6 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-/src/frontend
 /src/main/resources/static
 
 ### STS ###
@@ -38,3 +37,20 @@ out/
 
 ### VS Code ###
 .vscode/
+
+
+##vue frontend
+/src/frontend/.DS_Store
+/src/frontend/node_modules/
+/src/frontend//dist/
+/src/frontend/npm-debug.log*
+/src/frontend/yarn-debug.log*
+/src/frontend/yarn-error.log*
+
+# Editor directories and files
+/src/frontend/.idea
+/src/frontend/.vscode
+/src/frontend/*.suo
+/src/frontend/*.ntvs*
+/src/frontend/*.njsproj
+/src/frontend/*.sln
