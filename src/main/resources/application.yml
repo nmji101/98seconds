@@ -1,0 +1,13 @@
+##application.yml
+spring:
+  datasource:
+    platform: oracle
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: local
+    password: local
+  config:
+    activate:
+      on-profile:
+server:
+  port: 9000
