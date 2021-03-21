@@ -4,8 +4,8 @@ spring:
     platform: oracle
     driver-class-name: oracle.jdbc.driver.OracleDriver
     url: jdbc:oracle:thin:@localhost:1521:orcl
-    username: local
-    password: local
+    username: seconds
+    password: seconds
   config:
     activate:
       on-profile:
