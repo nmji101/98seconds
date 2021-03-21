@@ -1,21 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <v-app id="inspire">
+      <img src="./assets/logo.png">
+      <router-view/>
+      <Footer></Footer>
+    </v-app>
   </div>
 </template>
 
 <script>
 import request from "request"
+import Footer from "./Footer";
+
 export default {
   name: 'App',
-  mounted() {
-    request('http://127.0.0.1:8080/api/hello', function (error,response,body) {
-      window.console.error('error', error);
-      window.console.log('statusCode', response && response.statusCode);
-      window.console.log('body', body)
-    })
-  }
+  components: {Footer},
+  // mounted() {
+  //   request('http://127.0.0.1:8080/api/hello', function (error,response,body) {
+  //     window.console.error('error', error);
+  //     window.console.log('statusCode', response && response.statusCode);
+  //     window.console.log('body', body)
+  //   })
+  // }
 }
 </script>
 
