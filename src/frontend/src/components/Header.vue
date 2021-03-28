@@ -28,7 +28,7 @@ header {
 
 header h1 {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 100px;
 }
 
@@ -40,8 +40,8 @@ header ul.menu:after {
 
 header ul.menu {
   position: absolute;
-  top: 20px;
-  right: 50px;
+  right: 0px;
+  font-size: 13px;
 }
 
 header ul.menu li {

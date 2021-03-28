@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-app id="inspire">
-      <Header/>
+      <Header></Header>
       <img src="./assets/logo.png">
       <router-view/>
       <Footer></Footer>
@@ -18,7 +18,7 @@ export default {
   name: 'App',
   components: {
     Header,       //헤더 컴포넌트 추가
-
+    Footer
   },
   mounted() {
     request('http://localhost:8081/api/hello', function (error,response,body) {
