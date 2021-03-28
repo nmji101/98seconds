@@ -2,8 +2,8 @@
   <div id="app">
     <v-app id="inspire">
       <Header></Header>
-      <img src="./assets/logo.png">
       <router-view/>
+      <v-divider></v-divider>
       <Footer></Footer>
     </v-app>
   </div>
@@ -20,13 +20,13 @@ export default {
     Header,       //헤더 컴포넌트 추가
     Footer
   },
-  mounted() {
-    request('http://localhost:8081/api/hello', function (error,response,body) {
-      window.console.error('error', error);
-      window.console.log('statusCode', response && response.statusCode);
-      window.console.log('body', body)
-    })
-  }
+  // mounted() {
+  //   request('http://localhost:8081/api/hello', function (error,response,body) {
+  //     window.console.error('error', error);
+  //     window.console.log('statusCode', response && response.statusCode);
+  //     window.console.log('body', body)
+  //   })
+  // }
 }
 </script>
 
