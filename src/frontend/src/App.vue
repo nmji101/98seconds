@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <v-app id="inspire">
+      <Header/>
       <img src="./assets/logo.png">
       <router-view/>
       <Footer></Footer>
@@ -9,19 +10,23 @@
 </template>
 
 <script>
-import request from "request"
+import request from "request";
+import Header from "./components/Header";
 import Footer from "./Footer";
 
 export default {
   name: 'App',
-  components: {Footer},
-  // mounted() {
-  //   request('http://127.0.0.1:8080/api/hello', function (error,response,body) {
-  //     window.console.error('error', error);
-  //     window.console.log('statusCode', response && response.statusCode);
-  //     window.console.log('body', body)
-  //   })
-  // }
+  components: {
+    Header,       //헤더 컴포넌트 추가
+
+  },
+  mounted() {
+    request('http://localhost:8081/api/hello', function (error,response,body) {
+      window.console.error('error', error);
+      window.console.log('statusCode', response && response.statusCode);
+      window.console.log('body', body)
+    })
+  }
 }
 </script>
 
