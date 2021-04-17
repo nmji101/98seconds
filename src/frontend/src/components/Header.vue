@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>
-      98Seconds
+      <router-link to="/">98Seconds</router-link>
     </h1>
     <div class='menuWrap'>
       <ul class='menu'>
@@ -19,7 +19,7 @@
         <li><a href="javascript:;">BEST 50</a></li>
         <li><a href="javascript:;">NEW</a></li>
         <li><a href="javascript:;">SALE</a></li>
-        <li><a href="javascript:;">OUTER</a></li>
+        <li><router-link to="/ItemList">OUTER</router-link></li>
         <li><a href="javascript:;">TOP</a></li>
         <li><a href="javascript:;">BOTTOM</a></li>
         <li><a href="javascript:;">DRESS</a></li>

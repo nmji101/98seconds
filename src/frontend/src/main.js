@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import vuetify from './plugins/vuetify' // path to vuetify export
 import _ from "lodash"
+import axios from "axios";
 
 Vue.config.productionTip = false
 
@@ -14,6 +15,7 @@ new Vue({
   router,
   vuetify,
   _,
+  axios,
   components: { App },
   template: '<App/>'
 })
