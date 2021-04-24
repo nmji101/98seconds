@@ -82,7 +82,7 @@
         </v-row>
       </v-col>
     </v-row>
-    <v-btn><router-link to="/ItemInsert">INSERT ITEM TEMP</router-link></v-btn>
+    <v-btn><router-link to="/itemInsert">INSERT ITEM TEMP</router-link></v-btn>
   </v-container>
 </template>
 

@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Main from "../views/Main";
-import ItemList from "../components/item/ItemList";
-import ItemInsert from "../components/item/ItemInsert";
+import ItemList from "../views/item/ItemList";
+import ItemInsert from "../views/item/ItemInsert";
+import Login from "../views/login/Login";
+import Join from "../views/join/Join";
 
 Vue.use(Router)
 
@@ -15,14 +16,24 @@ export default new Router({
       component: Main
     },
     {
-      path: '/ItemList',
+      path: '/itemList',
       name: 'ItemList',
       component: ItemList
     },
     {
-      path: '/ItemInsert',
-      name: 'ItemList',
+      path: '/itemInsert',
+      name: 'ItemInsert',
       component: ItemInsert
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/join',
+      name: 'Join',
+      component: Join
     },
   ]
 })

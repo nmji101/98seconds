@@ -11,7 +11,7 @@
 
 <script>
 import request from "request";
-import Header from "./components/Header";
+import Header from "./Header";
 import Footer from "./Footer";
 
 export default {
@@ -20,13 +20,14 @@ export default {
     Header,       //헤더 컴포넌트 추가
     Footer
   },
-  // mounted() {
-  //   request('http://localhost:8081/api/hello', function (error,response,body) {
-  //     window.console.error('error', error);
-  //     window.console.log('statusCode', response && response.statusCode);
-  //     window.console.log('body', body)
-  //   })
-  // }
+  mounted() {
+    request('http://localhost:8081/api/hello', function (error,response,body) {
+      window.console.error('error', error);
+      window.console.log('statusCode', response && response.statusCode);
+      window.console.log('data', response);
+      window.console.log('body', body)
+    })
+  }
 }
 </script>
 

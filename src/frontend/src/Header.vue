@@ -8,7 +8,9 @@
         <li>
           <router-link to="/login">LOGIN</router-link>
         </li>
-        <li><a href="javascript:;">JOIN</a></li>
+        <li>
+          <router-link to="/join">JOIN</router-link>
+        </li>
         <li><a href="javascript:;">MY PAGE</a></li>
         <li><a href="javascript:;">CART</a></li>
         <li><a href="javascript:;">ORDER</a></li>
@@ -19,7 +21,7 @@
         <li><a href="javascript:;">BEST 50</a></li>
         <li><a href="javascript:;">NEW</a></li>
         <li><a href="javascript:;">SALE</a></li>
-        <li><router-link to="/ItemList">OUTER</router-link></li>
+        <li><router-link to="/itemList">OUTER</router-link></li>
         <li><a href="javascript:;">TOP</a></li>
         <li><a href="javascript:;">BOTTOM</a></li>
         <li><a href="javascript:;">DRESS</a></li>
