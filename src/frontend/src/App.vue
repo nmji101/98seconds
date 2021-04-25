@@ -10,6 +10,7 @@
 </template>
 
 <script>
+// eslint-disable-next-line no-unused-vars
 import request from "request";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -21,12 +22,11 @@ export default {
     Footer
   },
   mounted() {
-    request('http://localhost:8081/api/hello', function (error,response,body) {
-      window.console.error('error', error);
-      window.console.log('statusCode', response && response.statusCode);
-      window.console.log('data', response);
-      window.console.log('body', body)
-    })
+    // request('http://127.0.0.1:8080/api/hello', function (error,response,body) {
+    //   window.console.error('error', error);
+    //   window.console.log('statusCode', response && response.statusCode);
+    //   window.console.log('body', body)
+    // })
   }
 }
 </script>

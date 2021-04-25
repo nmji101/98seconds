@@ -16,6 +16,5 @@ new Vue({
   vuetify,
   _,
   axios,
-  components: { App },
-  template: '<App/>'
+  render: h => h(App)
 })

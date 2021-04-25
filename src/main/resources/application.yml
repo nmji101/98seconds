@@ -2,12 +2,22 @@
 spring:
   datasource:
     platform: oracle
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-    url: jdbc:oracle:thin:@localhost:1521:orcl
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@localhost:1521:orcl
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:oracle:thin:@localhost:1521:orcl
     username: seconds
     password: seconds
   config:
     activate:
       on-profile:
+  profiles:
+    active: local
 server:
   port: 9000
+
+##logback
+logging:
+  level:
+    root: info
+
